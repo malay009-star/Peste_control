@@ -1,0 +1,78 @@
+.cards_sec {
+    width: 90%;
+    margin: auto;
+    height: 100%;
+    // background-color: red;
+    margin-top: 6rem;
+    .first-container {
+        height: 100%;
+    }
+    .second-container {
+        height: 100%;
+        // background-color: red;
+    }
+    #service_heading {
+        // color: #252D30;
+        color: $secandry-color;
+    }
+}
+
+.same_contain {
+    img {
+        height: 100%;
+        transition: all 0.3s linear;
+        // width: 50%;  
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+}
+
+#copywrite_sec {
+    width: 90%;
+    // background-color: red;
+    margin: auto;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    p {
+        color: $secandry-color;
+        font-size: 1.2rem;
+    }
+    i {
+        color: $secandry-color;
+        font-size: 1.3rem;
+        cursor: pointer;
+    }
+}
+
+@include sm-tablet {
+    #copywrite_sec {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+@include mobile {
+    .cards_sec {
+        margin-top: 5rem;
+    }
+    #service_heading {
+        h1 {
+            font-size: 1.3rem;
+        }
+    }
+}
+
+@include sm-mobile {
+    #copywrite_sec {
+        p {
+            font-size: 1rem;
+        }
+        i {
+            font-size: 1.1rem;
+            cursor: pointer;
+        }
+    }
+}

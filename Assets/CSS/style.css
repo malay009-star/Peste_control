@@ -1,0 +1,233 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Nastaliq+Urdu&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+*,
+::after,
+::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: Poppins, sans-serif;
+}
+
+#btn {
+  display: inline-block;
+  border-radius: 10px;
+  color: #080b17;
+  font-weight: 500;
+  font-size: 16px;
+  width: 150px;
+  height: 60px;
+  transition: transform 0.3s;
+  background-color: #EA7101;
+}
+
+#btn:hover {
+  transform: scale(1.1);
+}
+
+.same_heading h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+}
+
+#equal_width {
+  width: 90%;
+  margin: auto;
+}
+
+.equal_spacing {
+  padding: 10rem 0rem;
+}
+
+.para {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30.8px;
+  margin: 1.25rem 0rem;
+  letter-spacing: 0.01em;
+  scroll-behavior: smooth;
+  color: #B5B6BA;
+}
+
+@media (max-width: 1023px) {
+  .equal_spacing {
+    padding: 8rem 0rem;
+  }
+}
+nav {
+  width: 100%;
+  margin: auto;
+  background-color: #024B82;
+}
+
+header {
+  width: 90%;
+  margin: auto;
+  height: 6rem;
+}
+header #logo img {
+  flex-grow: 3;
+  cursor: pointer;
+  width: 60px;
+}
+header li {
+  margin-left: 2rem;
+  width: 71px;
+  height: 21px;
+  text-align: center;
+  transition: all 0.2s linear;
+}
+header a {
+  color: white;
+  font-family: Poppins, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 130%;
+}
+header li:hover {
+  transform: scale(1.1);
+  color: #024B82;
+}
+header #nav-burger {
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header ul {
+    z-index: 1;
+    background-color: #024B82;
+    position: fixed;
+    top: 17%;
+    width: 100%;
+    height: 400px;
+    left: -100%;
+    display: flex;
+    border-radius: 0.25rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-evenly;
+    transition: all 0.3s linear;
+  }
+  header li {
+    margin-left: 0rem;
+  }
+  header .is-open {
+    left: 0%;
+  }
+  header a {
+    font-weight: 500;
+  }
+  header #nav-burger {
+    display: block;
+    margin-left: 2rem;
+  }
+}
+@media (max-width: 455px) {
+  header ul {
+    top: 33%;
+  }
+}
+@media (max-width: 400px) {
+  header a {
+    font-size: 16px;
+  }
+  header #logo img {
+    width: 50px;
+  }
+}
+.here_sec {
+  width: 90%;
+  height: 480px;
+  margin: auto;
+}
+.here_sec img {
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 800px) {
+  .here_sec {
+    width: 90%;
+    height: 400px;
+    margin: auto;
+  }
+}
+.cards_sec {
+  width: 90%;
+  margin: auto;
+  height: 100%;
+  margin-top: 6rem;
+}
+.cards_sec .first-container {
+  height: 100%;
+}
+.cards_sec .second-container {
+  height: 100%;
+}
+.cards_sec #service_heading {
+  color: #EA7101;
+}
+
+.same_contain img {
+  height: 100%;
+  transition: all 0.3s linear;
+}
+.same_contain img:hover {
+  transform: scale(1.05);
+}
+
+#copywrite_sec {
+  width: 90%;
+  margin: auto;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+}
+#copywrite_sec p {
+  color: #EA7101;
+  font-size: 1.2rem;
+}
+#copywrite_sec i {
+  color: #EA7101;
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  #copywrite_sec {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+}
+@media (max-width: 500px) {
+  .cards_sec {
+    margin-top: 5rem;
+  }
+  #service_heading h1 {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 400px) {
+  #copywrite_sec p {
+    font-size: 1rem;
+  }
+  #copywrite_sec i {
+    font-size: 1.1rem;
+    cursor: pointer;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
