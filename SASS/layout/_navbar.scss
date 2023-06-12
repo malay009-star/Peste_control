@@ -4,6 +4,10 @@ nav {
     background-color: $primary-color;
 }
 
+.is-open {
+    left: 0%;
+}
+
 header {
     width: 90%;
     margin: auto;
@@ -62,9 +66,6 @@ header {
         }
         li {
             margin-left: 0rem;
-        }
-        .is-open {
-            left: 0%;
         }
         a {
             // color: $bg-color;
